@@ -31,7 +31,7 @@ class SplashFragment : Fragment( ) {
              }
 
              override fun onFinish() {
-                  findNavController().navigate(R.id.action_splashFragment_to_signInFragment)
+                  findNavController().navigate(R.id.action_splashFragment_to_mainFragment)
              }
          }.start()
 

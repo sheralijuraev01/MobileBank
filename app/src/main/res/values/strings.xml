@@ -4,4 +4,31 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="project_name">Mobile Banking</string>
     <string name="sign_in">Sign In</string>
+
+
+    // bank type spinner array
+    <string-array name="bankType">
+        <item>Aloqa Bank</item>
+        <item>Anor Bank</item>
+        <item>Asaka Bank</item>
+        <item>Agrobank</item>
+        <item>Davr Bank</item>
+        <item>Milliy Bank</item>
+        <item>Hamkorbank</item>
+        <item>Ipoteka Bank</item>
+        <item>Ipak yo\'li Bank</item>
+        <item>Infin Bank</item>
+        <item>Turon Bank</item>
+        <item>Xalq Bank</item>
+        <item>Kapital Bank</item>
+        <item>Tenge Bank</item>
+        <item>Sanoat qurilishi Bank</item>
+        <item> Bank</item>
+    </string-array>
+
+    <string-array name="cardType">
+        <item>UzCard</item>
+        <item>Humo</item>
+        <item>Visa</item>
+    </string-array>
 </resources>

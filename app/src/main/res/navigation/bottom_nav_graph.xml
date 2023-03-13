@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="uz.sher.bank.ui.main.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_newCardFragment"
+            app:destination="@id/newCardFragment" />
+    </fragment>
     <fragment
         android:id="@+id/paymeFragment"
         android:name="uz.sher.bank.ui.main.PaymeFragment"
@@ -89,4 +93,9 @@
         android:name="uz.sher.bank.ui.ChequeFragment"
         android:label="fragment_cheque"
         tools:layout="@layout/fragment_cheque" />
+    <fragment
+        android:id="@+id/newCardFragment"
+        android:name="uz.sher.bank.ui.main.NewCardFragment"
+        android:label="fragment_new_card"
+        tools:layout="@layout/fragment_new_card" />
 </navigation>

@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
@@ -39,6 +40,9 @@ class HomeFragment : Fragment() {
 
         initList()
 
+        binding.homeAddCard.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_newCardFragment)
+        }
 
         binding.cardViewPager.apply {
             clipChildren = false  // No clipping the left and right items
