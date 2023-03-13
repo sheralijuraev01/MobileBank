@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item
+     android:id="@+id/homeFragment"
+     android:icon="@drawable/baseline_home_24"
+     android:title="Home" />
+
+    <item
+        android:id="@+id/transferFragment"
+        android:icon="@drawable/baseline_swap_horiz_24"
+        android:title="Transfer" />
+    <item
+        android:id="@+id/paymeFragment"
+        android:icon="@drawable/baseline_payment_24"
+        android:title="Payme" />
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/baseline_history_toggle_off_24"
+        android:title="History" />
+
+</menu>

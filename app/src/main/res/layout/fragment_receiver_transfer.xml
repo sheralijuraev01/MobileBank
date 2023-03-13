@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_color"
+    tools:context=".ui.main.transfer.ReceiverTransferFragment">
+
+    <LinearLayout
+        android:id="@+id/receiverTopMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtnReceiver"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/introTopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Money transfer"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/receiverBankIcon"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/receiverTopMenu"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anor_icon" />
+
+
+    <TextView
+        android:id="@+id/introCardNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receiverBankIcon"
+        android:layout_marginStart="30dp"
+        android:text="Card number"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/receiverCardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introCardNumberText"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/left_corner_radius_item"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="60dp"
+                android:text="8600 33** **** 1405"
+                android:textColor="#CDCDCD"
+                android:textSize="18sp"
+
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-1dp"
+                android:background="@drawable/right_corner_radius_item"
+                android:paddingEnd="15dp">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:padding="3dp"
+                    android:src="@drawable/baseline_close_24" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/humo_icon" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Jo'rayev Sherali"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/receiverCardContainer"
+        android:textColor="@color/white"
+        android:id="@+id/receiverCardName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Transfer amount"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/receiverCardName"
+        android:textColor="@color/white"
+        android:id="@+id/receiverAmountText"/>
+    <EditText
+        android:id="@+id/receiverTransferAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/receiverAmountText"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/item_background"
+        android:hint="Transfer amount"
+        android:inputType="number"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Comment"
+        android:visibility="gone"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/receiverTransferLimit"
+        android:textColor="@color/white"
+        android:id="@+id/receiverCommentText"/>
+    <EditText
+        android:id="@+id/receiverComment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/receiverCommentText"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/item_background"
+        android:hint="Not necessary"
+        android:visibility="gone"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Transfer amount:1 000 000 000 UZS"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/receiverTransferAmount"
+        android:textColor="@color/white"
+        android:id="@+id/receiverTransferLimit"/>
+
+
+    <Button
+        android:id="@+id/receiverTransferNextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/item_background"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4CAF50"
+        android:paddingBottom="10dp"
+        android:paddingHorizontal="12dp">
+
+        <ImageView
+            android:id="@+id/transferCardTypeLogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/uzcad_logo" />
+        <ImageView
+            android:id="@+id/transferCardBankLogo"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ipoteka_icon" />
+
+        <TextView
+            android:id="@+id/transferCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transferCardTypeLogo"
+            android:layout_marginTop="5dp"
+            android:text="Business"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/cardBalanceContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transferCardName"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transferCardBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:text="54 564 490.25"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/transferCardBalanceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textSize="18sp"
+                android:text="so'm"
+
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/transferCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal"
+                android:gravity="end"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/transferCardName"
+                android:text="**** 1405"
+                android:layout_toEndOf="@id/cardBalanceContainer"
+                android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

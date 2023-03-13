@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A27DD5"
+        android:paddingBottom="10dp"
+        android:paddingHorizontal="12dp">
+
+        <ImageView
+            android:id="@+id/cardTypeLogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/uzcad_logo" />
+        <ImageView
+            android:id="@+id/cardBankLogo"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ipoteka_icon" />
+
+        <TextView
+            android:id="@+id/cardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardTypeLogo"
+            android:layout_marginTop="5dp"
+            android:text="Business"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/cardBalanceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardName"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cardBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:text="54 564 490.25"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/cardBalanceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textSize="18sp"
+                android:text="so'm"
+
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@id/cardBalanceContainer"
+            android:id="@+id/cardOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+
+            android:textSize="18sp"
+            android:text="JURAEV "
+
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/cardNumberContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardOwner"
+            android:orientation="horizontal">
+            <TextView
+
+                android:id="@+id/cardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal"
+
+                android:textSize="16sp"
+                android:text="8600 33** **** 1405"
+
+                android:textColor="@color/white" />
+            <TextView
+
+                android:id="@+id/cardDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal"
+               android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:text="12/24"
+
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

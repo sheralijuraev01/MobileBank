@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".ui.main.HomeFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/homeUserIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_icon"
+        app:civ_border_color="#E60B0B"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/homeUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/homeUserIcon"
+        android:text="Carl Manuel"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/homeSetting"
+        android:layout_width="45dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/item_background"
+        android:paddingVertical="6.5dp"
+        android:src="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/balanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeUserIcon"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Your balance"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/homeUserBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balanceText"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:text="$ 7,896.00"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/homeAddCard"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@id/homeUserBalance"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/add_circle_background"
+        android:paddingVertical="5dp"
+        android:src="@drawable/add_icon" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/cardViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/homeUserBalance"
+        android:layout_marginTop="20dp" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/cardViewPager"
+        android:id="@+id/viewPagerIndicators"/>
+
+
+</RelativeLayout>

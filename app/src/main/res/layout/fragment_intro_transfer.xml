@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".ui.main.transfer.IntroTransferFragment">
+
+    <TextView
+        android:id="@+id/introTopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Money transfer"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/introWhomtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introTopText"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="To whom"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/introCardNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introWhomtext"
+        android:layout_marginStart="30dp"
+        android:text="Card number"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/introCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/introCardNumberText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/item_background"
+        android:hint="Card number"
+        android:inputType="number"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introCardNumber"
+        android:id="@+id/introRecipientRV"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/intoAllRecipients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introRecipientRV"
+        android:layout_centerInParent="true"
+        android:text="All recipients"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:id="@+id/introTransferNextBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:background="@drawable/item_background"
+        android:layout_marginHorizontal="16dp"/>
+
+</RelativeLayout>

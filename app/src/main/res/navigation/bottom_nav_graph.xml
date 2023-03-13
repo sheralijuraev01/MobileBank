@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.sher.bank.ui.main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/paymeFragment"
+        android:name="uz.sher.bank.ui.main.PaymeFragment"
+        android:label="fragment_payme"
+        tools:layout="@layout/fragment_payme" />
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="uz.sher.bank.ui.main.transfer.TransferMainFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_main_transfer" >
+        <action
+            android:id="@+id/action_transferFragment_to_allRecipientsFragment"
+            app:destination="@id/allRecipientsFragment" />
+        <action
+
+            android:id="@+id/action_transferFragment_to_introTransferFragment"
+            app:destination="@id/introTransferFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="uz.sher.bank.ui.main.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/allRecipientsFragment"
+        android:name="uz.sher.bank.ui.main.transfer.AllRecipientsFragment"
+        android:label="fragment_recipients_all"
+        tools:layout="@layout/fragment_recipients_all" />
+    <fragment
+        android:id="@+id/introTransferFragment"
+        android:name="uz.sher.bank.ui.main.transfer.IntroTransferFragment"
+        android:label="fragment_intro_transfer"
+        tools:layout="@layout/fragment_intro_transfer" >
+        <action
+            android:id="@+id/action_introTransferFragment_to_receiverTransferFragment"
+            app:destination="@id/receiverTransferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiverTransferFragment"
+        android:name="uz.sher.bank.ui.main.transfer.ReceiverTransferFragment"
+        android:label="fragment_receiver_transfer"
+        tools:layout="@layout/fragment_receiver_transfer" >
+        <action
+            android:id="@+id/action_receiverTransferFragment_to_moneyTransferFragment"
+            app:destination="@id/moneyTransferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moneyTransferFragment"
+        android:name="uz.sher.bank.ui.main.transfer.MoneyTransferFragment"
+        android:label="fragment_money_transfer"
+        tools:layout="@layout/fragment_money_transfer" >
+        <action
+            android:id="@+id/action_moneyTransferFragment_to_confirmationTransferFragment"
+            app:destination="@id/confirmationTransferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationTransferFragment"
+        android:name="uz.sher.bank.ui.main.transfer.ConfirmationTransferFragment"
+        android:label="fragment_confirmation_transfer"
+        tools:layout="@layout/fragment_confirmation_transfer" >
+        <action
+            android:id="@+id/action_confirmationTransferFragment_to_successfullyTransferFragment"
+            app:destination="@id/successfullyTransferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successfullyTransferFragment"
+        android:name="uz.sher.bank.ui.main.transfer.SuccessfullyTransferFragment"
+        android:label="fragment_successfully_transfer"
+        tools:layout="@layout/fragment_successfully_transfer" >
+        <action
+            android:id="@+id/action_successfullyTransferFragment_to_chequeFragment"
+            app:destination="@id/chequeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chequeFragment"
+        android:name="uz.sher.bank.ui.ChequeFragment"
+        android:label="fragment_cheque"
+        tools:layout="@layout/fragment_cheque" />
+</navigation>
