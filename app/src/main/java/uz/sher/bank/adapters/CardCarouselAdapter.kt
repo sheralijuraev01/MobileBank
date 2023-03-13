@@ -1,11 +1,8 @@
 package uz.sher.bank.adapters
 
 import android.view.LayoutInflater
-
 import android.view.ViewGroup
-
 import androidx.recyclerview.widget.RecyclerView
-
 import uz.sher.bank.databinding.CardCarouselBinding
 import uz.sher.bank.model.Card
 import uz.sher.bank.utils.functions.CardFunctions

@@ -25,7 +25,14 @@
         android:id="@+id/signUpFragment"
         android:name="uz.sher.bank.ui.auth.signup.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mainFragment"
         android:name="uz.sher.bank.ui.main.MainFragment"
@@ -35,5 +42,9 @@
         android:id="@+id/signInFragment"
         android:name="uz.sher.bank.ui.auth.signin.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
 </navigation>
