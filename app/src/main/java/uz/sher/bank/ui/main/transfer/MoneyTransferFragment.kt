@@ -37,28 +37,12 @@ class MoneyTransferFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        moneyCardViewpager()
+        moneyCardViewpager()
         binding.moneyTransferButton.setOnClickListener {
             findNavController().navigate(R.id.action_moneyTransferFragment_to_confirmationTransferFragment)
         }
 
-        binding.moneyCardViewPager.apply {
-            clipChildren = false  // No clipping the left and right items
-            clipToPadding = false  // Show the viewpager in full width without clipping the padding
-            offscreenPageLimit = 3  // Render the left and right items
-            (getChildAt(0) as RecyclerView).overScrollMode =
-                RecyclerView.OVER_SCROLL_NEVER // Remove the scroll effect
-        }
-        val compositePageTransformer = CompositePageTransformer()
-        compositePageTransformer.addTransformer(MarginPageTransformer((40 * Resources.getSystem().displayMetrics.density).toInt()))
-        compositePageTransformer.addTransformer { page, position ->
-            val r = 1 - kotlin.math.abs(position)
-            page.scaleY = (0.80f + r * 0.20f)
-        }
-        binding.moneyCardViewPager.setPageTransformer(compositePageTransformer)
-        demoData.clear()
-        transferCardAdapter = TransferCardAdapter(Data.getCardList())
-        binding.moneyCardViewPager.adapter = transferCardAdapter
+
 
     }
 
@@ -71,11 +55,8 @@ class MoneyTransferFragment : Fragment() {
                 RecyclerView.OVER_SCROLL_NEVER // Remove the scroll effect
         }
         val compositePageTransformer = CompositePageTransformer()
-        compositePageTransformer.addTransformer(MarginPageTransformer((40 * Resources.getSystem().displayMetrics.density).toInt()))
-        compositePageTransformer.addTransformer { page, position ->
-            val r = 1 - kotlin.math.abs(position)
-            page.scaleY = (0.80f + r * 0.20f)
-        }
+        compositePageTransformer.addTransformer(MarginPageTransformer((15 * Resources.getSystem().displayMetrics.density).toInt()))
+
         binding.moneyCardViewPager.setPageTransformer(compositePageTransformer)
         demoData.clear()
         transferCardAdapter = TransferCardAdapter(Data.getCardList())
