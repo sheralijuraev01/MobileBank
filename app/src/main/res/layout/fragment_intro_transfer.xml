@@ -26,7 +26,7 @@
         android:layout_below="@id/introTopText"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
-        android:text="To whom"
+        android:text="To whomkhkjnknkj"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -57,10 +57,10 @@
         android:textColorHint="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/introRecipientRV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/introCardNumber"
-        android:id="@+id/introRecipientRV"
         android:layout_marginTop="16dp" />
 
     <TextView
@@ -69,23 +69,23 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/introRecipientRV"
         android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
         android:text="All recipients"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
         android:textStyle="bold" />
 
     <Button
+        android:id="@+id/introTransferNextBtn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/secondary_color"
         android:text="Next"
         android:textAllCaps="false"
-        android:id="@+id/introTransferNextBtn"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
         android:textColor="@color/white"
-        android:textSize="22sp"
-        android:backgroundTint="@color/secondary_color"
-        android:layout_marginHorizontal="16dp"/>
+        android:textSize="22sp" />
 
 </RelativeLayout>

@@ -28,10 +28,7 @@
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
-
-
     </LinearLayout>
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchRecipient"
         android:layout_width="match_parent"
@@ -40,16 +37,9 @@
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/item_background"
         app:iconifiedByDefault="false"
-
         app:searchIcon="@drawable/baseline_search_24"
         app:closeIcon="@drawable/baseline_close_24"
         app:queryHint="Search recipient"
-
-
-
-
-
-
         />
 
     <androidx.recyclerview.widget.RecyclerView

@@ -44,16 +44,14 @@ class IntroTransferFragment : Fragment() {
         binding.introTransferNextBtn.setOnClickListener{
             findNavController().navigate(R.id.action_introTransferFragment_to_receiverTransferFragment)
         }
-        val layoutManager =
-            LinearLayoutManager(binding.root.context, LinearLayoutManager.HORIZONTAL, false)
+        val layoutManager = LinearLayoutManager(binding.root.context, LinearLayoutManager.HORIZONTAL, false)
         binding.introRecipientRV.layoutManager = layoutManager
         binding.introRecipientRV.adapter = RecipientAdapter(list)
     }
 
     private fun showInputMethod() {
         binding.introCardNumber.requestFocus()
-        val imm =
-            requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+        val imm =requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
         imm!!.showSoftInput(binding.introCardNumber, InputMethodManager.SHOW_IMPLICIT)
     }
 

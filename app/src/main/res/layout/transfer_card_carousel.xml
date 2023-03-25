@@ -9,8 +9,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#4CAF50"
+        android:background="@drawable/fone"
         android:paddingBottom="10dp"
+
         android:paddingHorizontal="12dp">
 
         <ImageView
