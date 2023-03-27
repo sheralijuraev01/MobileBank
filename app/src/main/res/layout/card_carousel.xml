@@ -8,8 +8,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#A27DD5"
+        android:layout_height="170dp"
+        android:background="@drawable/fone"
         android:paddingBottom="10dp"
         android:paddingHorizontal="12dp">
 
