@@ -2,6 +2,7 @@ package uz.sher.bank.fake_data
 
 import uz.sher.bank.R
 import uz.sher.bank.model.Card
+import uz.sher.bank.model.CardBackground
 import uz.sher.bank.model.History
 import uz.sher.bank.model.Recipient
 
@@ -10,6 +11,19 @@ class Data {
         private var cardList: MutableList<Card> = ArrayList()
         private var cardRecipientList: MutableList<Recipient> = ArrayList()
         private var historyList: MutableList<History> = ArrayList()
+        private var cardBackground: MutableList<CardBackground> = ArrayList()
+
+
+        fun getCardBackground():MutableList<CardBackground>{
+            cardBackground.clear()
+            cardBackground.add(CardBackground(R.drawable.fone))
+            cardBackground.add(CardBackground(R.drawable.fone))
+            cardBackground.add(CardBackground(R.drawable.fone))
+            cardBackground.add(CardBackground(R.drawable.fone))
+
+            return cardBackground
+        }
+
 
 
         fun getHistoryData(): MutableList<History> {

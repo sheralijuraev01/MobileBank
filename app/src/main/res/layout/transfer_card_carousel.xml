@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@drawable/fone"
-        android:paddingBottom="10dp"
-        android:paddingHorizontal="12dp">
+        android:paddingHorizontal="12dp"
+        android:paddingBottom="10dp">
 
         <ImageView
             android:id="@+id/transferCardTypeLogo"
@@ -20,6 +20,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="10dp"
             android:background="@drawable/uzcad_logo" />
+
         <ImageView
             android:id="@+id/transferCardBankLogo"
             android:layout_width="70dp"
@@ -36,8 +37,8 @@
             android:layout_below="@id/transferCardTypeLogo"
             android:layout_marginTop="5dp"
             android:text="Business"
-            android:textSize="18sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:id="@+id/cardBalanceContainer"
@@ -53,38 +54,37 @@
 
                 android:layout_marginTop="5dp"
                 android:text="54 564 490.25"
-                android:textStyle="bold"
+                android:textColor="@color/white"
                 android:textSize="20sp"
-                android:textColor="@color/white" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/transferCardBalanceType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textStyle="bold"
                 android:layout_marginStart="5dp"
-                android:textSize="18sp"
+                android:layout_marginTop="5dp"
                 android:text="so'm"
+                android:textColor="@color/white"
+                android:textSize="18sp"
 
-                android:textColor="@color/white" />
+                android:textStyle="bold" />
         </LinearLayout>
 
 
-
-            <TextView
-                android:id="@+id/transferCardNumber"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textStyle="normal"
-                android:gravity="end"
-                android:textSize="16sp"
-                android:layout_marginEnd="10dp"
-                android:layout_below="@id/transferCardName"
-                android:text="**** 1405"
-                android:layout_toEndOf="@id/cardBalanceContainer"
-                android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/transferCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transferCardName"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/cardBalanceContainer"
+            android:gravity="end"
+            android:text="**** 1405"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
 
 
     </RelativeLayout>
