@@ -69,7 +69,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="150dp"
         android:background="@drawable/spinner"
-        android:dropDownVerticalOffset="50dp"
+        android:dropDownVerticalOffset="95dp"
         android:prompt="@array/cardType"
         tools:ignore="SpeakableTextPresentCheck" />
 

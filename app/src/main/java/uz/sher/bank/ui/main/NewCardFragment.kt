@@ -37,15 +37,20 @@ class NewCardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         newCardViewpager()
         val bankTypeAdapter = ArrayAdapter(
-            binding.root.context, androidx.transition.R.layout.support_simple_spinner_dropdown_item,
+            binding.root.context, R.layout.spinner_list_item,
             resources.getStringArray(R.array.bankType)
         )
+        binding.bankTypeSpinner.setPopupBackgroundResource(R.drawable.spinner_list_background);
         binding.bankTypeSpinner.adapter = bankTypeAdapter
+
+
         val cardTypeAdapter = ArrayAdapter(
-            binding.root.context, androidx.transition.R.layout.support_simple_spinner_dropdown_item,
+            binding.root.context, R.layout.spinner_list_item,
             resources.getStringArray(R.array.cardType)
         )
+        binding.cardTypeSpinner.setPopupBackgroundResource(R.drawable.spinner_list_background);
         binding.cardTypeSpinner.adapter = cardTypeAdapter
+
     }
 
     private fun newCardViewpager() {

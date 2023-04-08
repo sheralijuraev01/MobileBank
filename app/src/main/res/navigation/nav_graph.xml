@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="uz.sher.bank.ui.auth.signup.SignUpFragment"
+        android:name="uz.sher.bank.ui.auth.signUp.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -40,7 +40,7 @@
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/signInFragment"
-        android:name="uz.sher.bank.ui.auth.signin.SignInFragment"
+        android:name="uz.sher.bank.ui.auth.signIn.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action

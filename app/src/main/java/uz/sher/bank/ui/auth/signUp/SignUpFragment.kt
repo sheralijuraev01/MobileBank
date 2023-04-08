@@ -1,7 +1,6 @@
-package uz.sher.bank.ui.auth.signup
+package uz.sher.bank.ui.auth.signUp
 
 import android.os.Bundle
-import android.text.SpannableString
 import android.text.SpannableStringBuilder
 import android.text.Spanned
 import android.text.method.LinkMovementMethod
@@ -13,8 +12,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 
 import android.widget.Toast
-import androidx.core.text.backgroundColor
-import uz.sher.bank.R
 import uz.sher.bank.databinding.FragmentSignUpBinding
 
 
