@@ -11,7 +11,7 @@ class CardFunctions {
             return result
         }
 
-        fun cardNumberFormat(cardNumber: String?): String {
+        private fun cardNumberFormat(cardNumber: String?): String {
             if (cardNumber == null || cardNumber.length != 16) return "Xatolik"
             val result = StringBuilder()
 

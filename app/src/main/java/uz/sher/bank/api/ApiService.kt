@@ -1,17 +1,27 @@
 package uz.sher.bank.api
 
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.http.Body
+import retrofit2.http.Header
+import retrofit2.http.POST
+import retrofit2.http.Query
+import uz.sher.bank.model.ResponseAuth
+import uz.sher.bank.model.SignInPost
+import uz.sher.bank.model.SignUpPost
 
 interface ApiService {
 
-    companion object {
-        private const val BASE_URL =
-            "http://ec2-13-51-255-30.eu-north-1.compute.amazonaws.com:8082/api/"
+    @POST("login")
+    fun loginUser(@Body signInPost: SignInPost): Call<ResponseAuth>
 
-        private fun getRetrofitInstance(): Retrofit {
-            return Retrofit.Builder().baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create()).build()
-        }
-    }
+    @POST("register")
+    fun createUser(@Body signUpPost: SignUpPost): ResponseAuth
+
+    @POST("verify")
+    fun verifyUser(
+        @Header("Authorization") apiKey: String,
+        @Query("code") query: String
+    ): ResponseAuth
 }
