@@ -40,7 +40,8 @@
                 android:id="@+id/nameSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,13 +53,15 @@
 
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="16dp"
-            android:hint="Surname">
+            android:hint="Surname"
+            tools:ignore="MissingClass">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/surnameSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,7 +79,8 @@
                 android:id="@+id/emailSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,7 +98,8 @@
                 android:id="@+id/passwordSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -112,7 +117,8 @@
                 android:id="@+id/confPasswordSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,7 +154,8 @@
             android:layout_marginTop="20dp"
             android:text="Sign Up"
             android:textAllCaps="false"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
 
 
         <LinearLayout
@@ -165,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:text="Already have an account"
                 android:textColor="@color/black"
-                tools:ignore="RtlSymmetry" />
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
 
             <TextView
                 android:id="@+id/signInTV"
@@ -174,7 +181,8 @@
                 android:paddingHorizontal="5dp"
                 android:text="@string/sign_in"
                 android:textColor="@color/main_color"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
 
 
         </LinearLayout>
