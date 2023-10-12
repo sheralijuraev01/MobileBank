@@ -90,7 +90,7 @@
     </fragment>
     <fragment
         android:id="@+id/chequeFragment"
-        android:name="uz.sher.bank.ui.ChequeFragment"
+        android:name="uz.sher.bank.ui.main.transfer.ChequeFragment"
         android:label="fragment_cheque"
         tools:layout="@layout/fragment_cheque" />
     <fragment

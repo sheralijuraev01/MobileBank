@@ -3,6 +3,7 @@
 
     <item>
         <layer-list>
+            <item android:drawable="@drawable/baseline_arrow_drop_down_24" android:gravity="start" />
             <item>
                 <shape android:shape="rectangle">
                     <solid android:color="@color/secondary_color" />

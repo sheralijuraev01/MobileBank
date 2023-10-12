@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="none"
     tools:context=".ui.auth.signUp.SignUpFragment">
 
@@ -13,17 +14,22 @@
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="ScrollViewCount">
-
+        <ProgressBar
+            android:id="@+id/signUpProgress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/titleSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginTop="50dp"
-            android:text="Sign up"
+            android:layout_marginTop="10dp"
+            android:text="Ro'yxatdan o'tish"
             android:textColor="@color/main_color"
-            android:textSize="35sp"
+            android:textSize="33sp"
             android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -34,7 +40,7 @@
 
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="20dp"
-            android:hint="Name">
+            android:hint="Ism">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/nameSignUp"
@@ -53,7 +59,7 @@
 
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="16dp"
-            android:hint="Surname"
+            android:hint="Familiya"
             tools:ignore="MissingClass">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -79,7 +85,7 @@
                 android:id="@+id/emailSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -89,16 +95,16 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            app:passwordToggleEnabled="true"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="16dp"
-            android:hint="Password">
+            android:hint="Parol">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -108,16 +114,17 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
 
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="16dp"
-            android:hint="Confirm password">
+            android:hint="Parolni qayta kiriting">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/confPasswordSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -152,8 +159,8 @@
 
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="20dp"
-            android:text="Sign Up"
-            android:textAllCaps="false"
+            android:text="Ro'yxatdan o'tish"
+            android:textAllCaps="true"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck" />
 
@@ -170,7 +177,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have an account"
+                android:text="Akkountingiz bormi? "
                 android:textColor="@color/black"
                 tools:ignore="RtlSymmetry,TextSizeCheck" />
 
@@ -179,7 +186,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="5dp"
-                android:text="@string/sign_in"
+                android:text="Tizimga kirish"
                 android:textColor="@color/main_color"
                 android:textStyle="bold"
                 tools:ignore="TextSizeCheck" />

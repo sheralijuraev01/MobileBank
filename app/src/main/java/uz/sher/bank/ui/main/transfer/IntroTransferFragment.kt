@@ -1,5 +1,6 @@
 package uz.sher.bank.ui.main.transfer
 
+import androidx.fragment.app.Fragment
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
@@ -8,7 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import androidx.annotation.RequiresApi
-import androidx.fragment.app.Fragment
+
+
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import uz.sher.bank.R

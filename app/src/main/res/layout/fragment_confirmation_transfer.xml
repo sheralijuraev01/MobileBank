@@ -19,10 +19,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/backBtnConfirmation"
-        android:layout_margin="16dp"
-        android:text="Confirmation"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Tasdiqlash"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
@@ -31,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textConfirmation"
         android:layout_margin="16dp"
-        android:text="Enter the code sent to your e-mail sher.jorayev01@gmail.com"
+        android:text="sher.jorayev01@gmail.com elektron pochtaga kelgan kodni kiriting"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="normal" />
@@ -43,7 +46,7 @@
         android:layout_below="@id/confirmationEmailText"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Enter the code"
+        android:text="Kodni kiritish"
         android:textColor="@color/white" />
 
     <EditText
@@ -53,12 +56,11 @@
         android:layout_below="@id/enterCodeText"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/item_background"
-        android:hint="Enter the code"
+        style="@style/EditTextStyle"
+        android:text="Kodni kiritish"
         android:inputType="number"
         android:paddingHorizontal="16dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+         />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -70,7 +72,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resend"
+            android:text="Qayta yuborish"
             android:textColor="@color/white"/>
         <TextView
             android:layout_width="wrap_content"
@@ -91,9 +93,9 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/secondary_color"
-        android:text="Confirm"
+        android:text="Tasdiqlang"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
 
 </RelativeLayout>

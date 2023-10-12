@@ -10,4 +10,10 @@
     <color name="main_color">#0A0A29</color>
     <color name="secondary_color">#231F42</color>
     <color name="secondary_text_color">#777780</color>
+
+
+    <color name="error_color">#E13F3F</color>
+
+
+
 </resources>

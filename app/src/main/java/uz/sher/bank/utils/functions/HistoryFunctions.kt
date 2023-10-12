@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import java.text.SimpleDateFormat
 import java.util.*
 
-class HistoryFunctions {
+class  HistoryFunctions {
     companion object{
         @SuppressLint("SimpleDateFormat")
         fun convertLongToTime(time: Long): String {

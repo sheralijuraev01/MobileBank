@@ -5,10 +5,11 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import androidx.annotation.RequiresApi
+import javax.inject.Inject
 
 class NetworkHelper(private val context: Context) {
 
-    @RequiresApi(Build.VERSION_CODES.M)
+
     fun isNetworkConnected(): Boolean {
         var result = false
 
@@ -29,11 +30,11 @@ class NetworkHelper(private val context: Context) {
         } else {
             connectivityManager.run {
                 connectivityManager.activeNetworkInfo?.run {
-                    result=when(type){
-                        ConnectivityManager.TYPE_WIFI->true
-                        ConnectivityManager.TYPE_MOBILE->true
-                        ConnectivityManager.TYPE_ETHERNET->true
-                        else->false
+                    result = when (type) {
+                        ConnectivityManager.TYPE_WIFI -> true
+                        ConnectivityManager.TYPE_MOBILE -> true
+                        ConnectivityManager.TYPE_ETHERNET -> true
+                        else -> false
                     }
                 }
             }
